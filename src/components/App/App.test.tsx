@@ -1,9 +1,10 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { mount } from 'enzyme';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('portfolio App component', () => {
+  it('renders', () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.find('.app').exists()).toBe(true);
+  });
 });
