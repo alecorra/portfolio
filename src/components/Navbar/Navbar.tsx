@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import myPic from '../../images/cartoon-orange.jpg';
+import myPic from '../../images/cartoonLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
